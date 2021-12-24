@@ -1,5 +1,3 @@
 ## Olá Mundo!
 
-https://github.com/WGAB/treinaweb/edit/master/README.md
-
-### Criando uma nova estrutura de demonstração de portfólio.
+Neste projeto irei testar alguns leyouts funcionais criados por outros desenvolvedores. A ideia aqui é contribuir com a comunidade mandando sugestões simples de desenvolvimento.
