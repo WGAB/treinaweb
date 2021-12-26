@@ -112,7 +112,7 @@ img {
     align-items: center;
 }
 
-.menu {
+.menu,.sub-menu {
     display: flex;
 }
 
@@ -120,11 +120,22 @@ img {
     margin-left: 10px;
 }
 
+.sub-menu li {
+    margin-left: 10px;
+}
+
 .menu li a {
     display: block;
-    padding: 10 px;
+    padding: 15 px;
     background-color: maroon;
 }
+
+.sub-menu li a {
+    display: block;
+    padding: 15 px;
+    background-color: maroon;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
