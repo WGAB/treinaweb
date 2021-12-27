@@ -107,11 +107,30 @@ p2 {
     color: white;
     
 }
+
+.flex img {
+    max-width: 100%;
+    display: box;
+    padding: 25px;
+    background-color: black;
+}
+
 img {
     max-width: 100%;
-    display: block;
-    padding: 10px;
+    display: box;
+    padding: 5px;
     background-color: black;
+}
+
+.grid1 div figure {
+    min-width: 250px;
+    display: flexbox;
+    padding: 20px;
+}
+
+.grid1 div figcaption {
+    justify-content: center;
+    color: tomato;
 }
 
 .header {
@@ -142,7 +161,7 @@ img {
 
 .sub-menu li a {
     display: block;
-    padding: 15 px;
+    padding: 5 px;
     background-color: maroon;
 }
 
@@ -160,30 +179,40 @@ img {
 
 .grid1 {
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
+    padding: 0px;
 }
 
 .grid1 > div:nth-child(n + 4) {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-gap: 0px;
    align-items: center;
+   justify-content: center;
+   background-color: white;
+   padding: 10px;
+   margin: 10px;
+   width: auto;
+}
+
+.grid1 p2 {
+    color: black;
 }
 
 .grid1 > div.anuncio {
     grid-column: 1;
     grid-row: 2/5;
-    display: block;
+    display: flex;
     max-width: auto;
-    margin: 0 auto;
-    padding: 0px auto 0px auto;
 }
 
 @media (max-width: 600px) {
-    .grid1 {
-        grid-template-columns: repeat(2,1fr);
+    .grid1 div figure {
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 300px;
     }
 }
