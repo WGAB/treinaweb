@@ -1,0 +1,41 @@
+body, ul, li, p{
+    margin: 10px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    padding-left: 20px;
+}
+.header li {
+    display: flex;
+    padding: 2px;
+    margin-left: 20px;
+    background-color: tomato;
+}
+.header img {
+    width: 200px;
+    float: inherit;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background-color: black;
+}
